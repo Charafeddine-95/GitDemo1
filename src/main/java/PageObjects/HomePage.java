@@ -33,4 +33,10 @@ public class HomePage extends AbstractComponent {
 
         return driver.findElement(homePageProfileIcon).isDisplayed();
     }
+
+    public void gitTestMerge()
+    {
+
+      
+    }
 }
