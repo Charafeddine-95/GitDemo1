@@ -30,8 +30,7 @@ public class HomePage extends AbstractComponent {
     }
     public boolean isHomePageDisplayed()
     {
-        //SearchContext shadowRoot = driver.findElement(myElementShadowRoot).getShadowRoot();
-        //return shadowRoot.findElement(homePageTitle).getText().trim();
+
         return driver.findElement(homePageProfileIcon).isDisplayed();
     }
 }
