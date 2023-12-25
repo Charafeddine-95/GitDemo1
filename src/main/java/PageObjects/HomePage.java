@@ -20,11 +20,18 @@ public class HomePage extends AbstractComponent {
 
     private final By myElementShadowRoot = By.cssSelector("app-main");
     private final By homePageTitle = By.cssSelector(".bl-navbar-brand");
+    private final By homePageProfileIcon = By.cssSelector("[testlabel='usermenu_layout.navbar.usermenu.title']");
 
     public String getHomePageTitle()
     {
         //SearchContext shadowRoot = driver.findElement(myElementShadowRoot).getShadowRoot();
         //return shadowRoot.findElement(homePageTitle).getText().trim();
         return driver.findElement(homePageTitle).getText().trim();
+    }
+    public boolean isHomePageDisplayed()
+    {
+        //SearchContext shadowRoot = driver.findElement(myElementShadowRoot).getShadowRoot();
+        //return shadowRoot.findElement(homePageTitle).getText().trim();
+        return driver.findElement(homePageProfileIcon).isDisplayed();
     }
 }

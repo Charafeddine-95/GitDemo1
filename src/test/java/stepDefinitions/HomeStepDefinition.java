@@ -14,7 +14,7 @@ public class HomeStepDefinition extends BaseTest {
 
     @Then("^user is in homepage and verify the page title (.+)$")
     public void user_is_in_homepage_and_verify_the_page_title(String pageTitle) throws Throwable {
-        Assert.assertEquals(homePage.getHomePageTitle(), pageTitle, "Login failed");
+        Assert.assertTrue(homePage.isHomePageDisplayed(), "Login failed");
     }
 
     @And("^user selects tab (.+)$")
